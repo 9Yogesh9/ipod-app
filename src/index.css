@@ -1,0 +1,212 @@
+body {
+	margin: 0;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	background-image: url("./Images/main-bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.App {
+	margin: 1% auto 0px auto;
+	top: 3vh;
+	width: min-content;
+	padding: 20px 10px 5px 10px;
+	border-radius: 20px;
+	background-image: url("./Images/skin.jpg");
+	box-shadow: 0px 0px 7px 2px black;
+    filter: drop-shadow(5px 7px 13px black);
+	background-size: cover;
+	position: relative;
+	animation-duration: 0.6s;
+	animation-iteration-count: 1;
+	animation-play-state: running;
+	animation-timing-function: ease-in-out;
+}
+
+.screen-container {
+	width: 350px;
+	height: 350px;
+	margin: 0px auto;
+	background-image: url("./Images/bg-screen.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+	border-radius: 20px;
+	transition: transform ease-in-out 0.2s;
+}
+
+
+.buttons-container {
+	width: 260px;
+	height: 260px;
+	border: 1px solid rgb(248, 236, 236);
+	margin: 10px auto 0px auto;
+	border-radius: 50%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(221 221 221);
+	transition: transform ease-in-out 0.2s;
+}
+
+.center-circle {
+	width: 50%;
+	height: 50%;
+	background-color: rgb(90, 90, 90);
+	border-radius: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	outline: none;
+	border: none;
+}
+
+.menu-button {
+	position: absolute;
+	top: 0px;
+	height: 25%;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 37% 37% 0% 0%;
+	font-size: 30px;
+	outline: none;
+	border: none;
+	background-color: transparent;
+	color: rgb(78, 78, 78);
+}
+
+.left-button {
+	position: absolute;
+	left: 0px;
+	width: 25%;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 37% 0% 0% 37%;
+	font-size: 30px;
+	outline: none;
+	border: none;
+	background-color: transparent;
+	color: rgb(78, 78, 78);
+}
+
+.right-button {
+	position: absolute;
+	right: 0px;
+	width: 25%;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0% 37% 37% 0%;
+	font-size: 30px;
+	outline: none;
+	border: none;
+	background-color: transparent;
+	color: rgb(78, 78, 78);
+}
+
+.play-pause {
+	position: absolute;
+	bottom: 0px;
+	height: 25%;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0px 0% 37% 37%;
+	font-size: 30px;
+	outline: none;
+	border: none;
+	background-color: transparent;
+	color: rgb(78, 78, 78);
+}
+
+.menu-screen {
+	width: 0%;
+	height: 100%;
+	position: absolute;
+	z-index: 5;
+	left: 0%;
+	background-color: rgb(237, 238, 250);
+	box-shadow: none;
+	overflow-x: hidden;
+	transition: width ease-in-out 0.2s;
+}
+
+.width-50 {
+	width: 50% !important;
+	box-shadow: 0px 0px 12px 1px rgb(82, 82, 82) !important;
+}
+
+.menu-screen>div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 20%;
+	border: 1px solid rgb(190, 190, 190);
+	box-sizing: border-box;
+	white-space: nowrap;
+}
+
+.menu-screen p {
+	font-size: 20px;
+	overflow-wrap: normal;
+}
+
+.menu-screen>.selected {
+    background-image: linear-gradient(45deg, #000000b5, transparent);
+    color: white;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+/* I-Pod logo style */
+.app-logo {
+	background-color: #67c9f3;
+    background-image: linear-gradient(45deg, black, transparent);
+	color: white;
+}
+
+/* different screens style*/
+
+.dummy-screen {
+	color: rgb(255 255 255);
+	filter: drop-shadow(5px 6px 6px black);
+	background-image: radial-gradient(#a0a0a0, #232222a1);
+	height: 100%;
+}
+
+.dummy-screen>div {
+	font-size: 160px;
+}
+
+.music-screen {
+	background-color: #ffb500;
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.artist-screen {
+	background-image: radial-gradient(white, transparent);
+	width: 100%;
+	height: 100%;
+	font-weight: 700;
+	color: rgb(255 255 255);
+	text-shadow: 0 0 12px #1900cd, 0 4px 12px #0015cd;
+}
+
+.artist-screen>div {
+	font-size: 180px;
+}
